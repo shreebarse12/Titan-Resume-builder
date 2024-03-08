@@ -191,6 +191,7 @@ a{
     align-items: center;
     justify-content: flex-start;
     font-size: 2.0rem;
+    margin-right: 172px;
 }
 .navbar-brand-text{
     color: var(--clr-dark);
@@ -217,6 +218,7 @@ a{
 .auto-group-6m27-aij a p {
     color: black;
     text-decoration: none;
+    
 }
 .auto-group-6m27-aij a p:hover{
     /* background-color: #0028ff3d; */
