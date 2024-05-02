@@ -7,10 +7,55 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+            .containe {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 50px;
+            }
+        
+            .box {
+                width: 290px;
+                height: 317px;
+                background-color: #f0f0f0;
+                border: 2px solid #333;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                margin: 10px; /* Adjust the margin to create space between the boxes */
+            }
+            .box img{
+                border-radius: 10px;
+                width: 245px;
+                height: 276px;
+            }
+            .heade{
+    /* min-height: calc(100vh - 80px); */
+    display: flex;
+    padding: 40px 0px 40px 0px;
+    flex-direction: column;
+    background-color: #8b949e59;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/images/main.webp");
+    background-repeat: no-repeat;
+    background-position: cover;
+    backdrop-filter: blur(5px);
+}
+.heade-content{
+    max-width: 740px;
+    margin-right: auto;
+    margin-left: auto;
+}
+        
+        </style>
     </head>
     <body>
 
-         <nav class = "navbar ">
+        <nav class = "navbar ">
             <div class="container">
                 <div class = "navbar-content">
                     <div class = "brand-and-toggler">
@@ -31,9 +76,8 @@
 
                             <a href="LoginPage.html">
                             <p class="login-register-4xf">Login/Register</p></a>
-
+                      
                         </span>
-
                         <button type = "button" class = "navbar-toggler-btn">
                             <div class = "bars">
                                 <div class = "bar"></div>
@@ -46,25 +90,99 @@
             </div>
         </nav>
 
-        <header class = "header bg-bright" id = "header">
+        <header class = "heade bg-bright" id = "heade" >
             <div class = "container">
-                 
-
-
-
-
-
-
-
-
-
-
-
+                <div class = "heade-content text-center">
+                    <h6 class = "text-uppercase text-blue-dark fs-14 fw-6 ls-1">online resume builder</h6>
+                    <h1 class = "lg-title">Discover Your Potential: Master the Art of Resume Writing</h1>
+                    <p class = "text-dark fs-18" style=" margin-bottom: 25px;"><b>Welcome to </b>[<span class="navbar-brand-text" style="
+                        color: var(--clr-blue);
+                    ">
+                    TITANS-RESUME-BUILDER
+                    </SPAn>] <b> , where we empower you to craft resumes that leave a lasting impression. In a world where only 2% of resumes make it past the first round, we equip you with the tools and expertise to elevate your profile into that coveted percentile.</b></p>
+                    <a href = "ResumeDetails.html" class = "btn btn-primary text-uppercase">create my resume</a>
+                    <!-- <img src = "assets/images/resumetemp.png"> -->
                 </div>
             </div>
         </header>
 
-        
+        <div class="containe">
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T1.png" alt="abc">
+            </div>
+        </a>
+         
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T2.jpg" alt="xcs">
+            </div>
+        </a>
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T3.png" alt="ert">
+            </div>
+        </a>
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/t4.jpg" alt="sdf">
+            </div>
+        </a>
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T5.png" alt="abc">
+            </div>
+        </a>
+         
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T6.jpg" alt="xcs">
+            </div>
+        </a>
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T7.webp" alt="ert">
+            </div>
+        </a>
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T8.png" alt="sdf">
+            </div>
+        </a>
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T9.webp" alt="abc">
+            </div>
+        </a>
+         
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T10.png" alt="xcs">
+            </div>
+        </a>
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T11.webp" alt="ert">
+            </div>
+        </a>
+
+        <a href="ResumeDetails.html">
+            <div class="box">
+                <img src="assets/images/T12.jpg" alt="sdf">
+            </div>
+        </a>
+
+
+
+        </div>
 
         <footer class = "footer bg-dark">
             <div class="container">
@@ -73,6 +191,7 @@
                 </div>
             </div>
         </footer>
+        
         
     </body>
 </html>

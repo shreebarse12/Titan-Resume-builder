@@ -7,6 +7,67 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+            *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+        background-color: #fff;
+        background-image: url("assets/images/cot.jpg!w700wp");
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: center;
+    }
+    .containerss{
+        width: 500px;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #4e7c8b;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        opacity: 0.8;
+    }
+    .containerss h1{
+        text-align: center;
+        margin-bottom: 60px;
+        color: #333;
+        
+    }
+    form input,
+    form textarea{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        color: #333;
+    }
+    form input:focus,
+    form textarea:focus{
+        outline: none;
+        box-shadow: o o 5px #333;
+    }
+    form button{
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border-radius: 6px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    form button:hover{
+        background-color: #555;
+    }
+    </style>
+    
     </head>
     <body>
 
@@ -49,17 +110,14 @@
         <header class = "header bg-bright" id = "header">
             <div class = "container">
                  
-
-
-
-
-
-
-
-
-
-
-
+                <div class = "containerss">
+                    <h1>Contact Us</h1>
+                    <form>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </header>
