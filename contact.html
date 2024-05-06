@@ -20,16 +20,20 @@
         background-repeat: no-repeat;
         background-size: 130%;
         background-position: center;
+         
     }
+    .header{
+                background-image: url('assets/image/main.jpg');
+            }
     .containerss{
-        width: 500px;
-        max-width: 800px;
+        width: 450px;
+        max-width: 400px;
         margin: 50px auto;
         padding: 20px;
-        background-color: #4e7c8b;
-        border-radius: 10px;
+        background-color: #95B3FF;
+        border-radius: 3px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-        opacity: 0.8;
+        
     }
     .containerss h1{
         text-align: center;
@@ -58,13 +62,13 @@
         width: 100%;
         padding: 15px;
         border-radius: 6px;
-        background-color: #333;
+        background-color: #007bff;
         color: #fff;
         cursor: pointer;
         transition: 0.3s ease;
     }
     form button:hover{
-        background-color: #555;
+        background-color: #007bff;
     }
     </style>
     
@@ -112,7 +116,7 @@
                  
                 <div class = "containerss">
                     <h1>Contact Us</h1>
-                    <form>
+                    <form onsubmit="sendEmail(); reset(; return false;)">
                         <input type="text" placeholder="Name">
                         <input type="email" placeholder="Email">
                         <textarea placeholder="Your Message"></textarea>
@@ -131,6 +135,21 @@
                 </div>
             </div>
         </footer>
-        
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                   Host : "smtp.gmail.com",
+                   Username : "syedanidasaher@gmail.com",
+                   Password : "Saher123",
+                   To : "syedanidasaher@gmail.com",
+                   From : document.getElementById("email").value,
+                   Subject : "New contact form enquiry",
+                   Body : "And this is the body"
+                   }).then(
+                    message => alert(message)
+                   );
+            }
+        </script>
     </body>
 </html>

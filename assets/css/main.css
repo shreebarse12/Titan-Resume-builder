@@ -231,7 +231,7 @@ a{
     justify-content: space-between;
 }
 .header{
-    min-height: calc(100vh - 80px);
+    min-height: calc(91vh - 80px);
     display: flex;
     flex-direction: column;
     background-color: #8b949e59;
